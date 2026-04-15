@@ -559,7 +559,7 @@ def ask_question(data: Question):
     db = SessionLocal()
     try:
         sql_prompt = f"""
-        You are a SQLite expert.
+        You are a PostgreSQL expert.
 
         Table: invoices
         Columns: vendor, invoice_number, invoice_date, currency, original_amount, original_gst,
