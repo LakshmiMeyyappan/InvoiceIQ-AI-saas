@@ -31,10 +31,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Define origins 
 origins = [
+    "https://invoice.lashai.in",
+    "https://api.lashai.in",
     "https://invoice-iq-ai-saas.vercel.app",
-    "https://lashai.in",
-    "https://www.lashai.in",
-    "http://localhost:3000" 
+    "http://localhost:3000"
 ]
 
 # Then pass the 'origins' list to the middleware
