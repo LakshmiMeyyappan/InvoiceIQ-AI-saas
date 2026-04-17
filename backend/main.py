@@ -29,9 +29,18 @@ app = FastAPI(title="AI Invoice SaaS", version="2.0.0")
 
 from fastapi.middleware.cors import CORSMiddleware
 
+# Define origins 
+origins = [
+    "https://invoice-iq-ai-saas.vercel.app",
+    "https://lashai.in",
+    "https://www.lashai.in",
+    "http://localhost:3000" 
+]
+
+# Then pass the 'origins' list to the middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins, 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
